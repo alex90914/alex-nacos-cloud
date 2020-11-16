@@ -18,9 +18,9 @@
     <properties>
         <java.version>1.8</java.version>
         <lombok>RELEASE</lombok>
-        <spring.boot.version>2.0.9.RELEASE</spring.boot.version>
-        <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
-        <spring-alibaba.version>0.2.1.RELEASE</spring-alibaba.version>
+        <spring.boot.version>2.0.1.RELEASE</spring.boot.version>
+        <spring-cloud.version>Finchley.RC1</spring-cloud.version>
+        <springh.cloud.alibaba.version>2.0.1.RELEASE</springh.cloud.alibaba.version>
     </properties>
 
 
@@ -35,13 +35,22 @@
                 <scope>import</scope>
             </dependency>
 
+
             <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-                <version>${spring-alibaba.version}</version>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+                <version>${springh.cloud.alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <!--            <dependency>-->
+            <!--                <groupId>org.springframework.cloud</groupId>-->
+            <!--                <artifactId>spring-cloud-alibaba-dependencies</artifactId>-->
+            <!--                <version>${spring-alibaba.version}</version>-->
+            <!--                <type>pom</type>-->
+            <!--                <scope>import</scope>-->
+            <!--            </dependency>-->
 
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
