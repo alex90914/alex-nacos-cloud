@@ -34,8 +34,13 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
-
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+                <version>${springh.cloud.alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
@@ -43,15 +48,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
-            <!--            <dependency>-->
-            <!--                <groupId>org.springframework.cloud</groupId>-->
-            <!--                <artifactId>spring-cloud-alibaba-dependencies</artifactId>-->
-            <!--                <version>${spring-alibaba.version}</version>-->
-            <!--                <type>pom</type>-->
-            <!--                <scope>import</scope>-->
-            <!--            </dependency>-->
-
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -59,23 +55,19 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
             <!-- feign -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-feign</artifactId>
                 <version>RELEASE</version>
             </dependency>
-
             <!--ribbon-->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-ribbon</artifactId>
                 <version>RELEASE</version>
             </dependency>
-
             <!--hystrix-->
-
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-hystrix</artifactId>
@@ -83,17 +75,14 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
             <!--hystrix-dashboard-->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
                 <version>RELEASE</version>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
-
     <!--指定使用maven打包-->
     <build>
         <plugins>
